@@ -455,14 +455,16 @@
                 <div
                   class="page-title-box d-sm-flex align-items-center justify-content-between"
                 >
-                  <h4 class="mb-sm-0">Product Categories</h4>
+                  <h4 class="mb-sm-0">Purchase Items List</h4>
 
                   <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                       <li class="breadcrumb-item">
                         <a href="javascript: void(0);">Web Utlity</a>
                       </li>
-                      <li class="breadcrumb-item active">Product Categories</li>
+                      <li class="breadcrumb-item active">
+                        Purchase Items List
+                      </li>
                     </ol>
                   </div>
                 </div>
@@ -480,7 +482,7 @@
                           type="button"
                           class="btn btn-dark waves-effect waves-light btn-sm"
                           data-bs-toggle="modal"
-                          data-bs-target=".addModal"
+                          data-bs-target="#addModal"
                         >
                           Add More
                           <i class="ri-arrow-right-line align-middle ms-2"></i>
@@ -491,33 +493,62 @@
                       <table class="table table-striped table-bordered mb-0">
                         <thead>
                           <tr>
-                            <th>#</th>
-                            <th>Categories Banner</th>
-                            <th>Status</th>
-                            <th>Action</th>
+                            <th style="text-wrap: nowrap">ID</th>
+                            <th style="text-wrap: nowrap">Items</th>
+                            <th style="text-wrap: nowrap">Purchase Status</th>
+                            <th style="text-wrap: nowrap">Order By</th>
+                            <th style="text-wrap: nowrap">Date</th>
+                            <th style="text-wrap: nowrap">Supplier</th>
+                            <th style="text-wrap: nowrap">Total</th>
+                            <th style="text-wrap: nowrap">Paid</th>
+                            <th style="text-wrap: nowrap">Balance</th>
+                            <th style="text-wrap: nowrap">Credit</th>
+                            <th style="text-wrap: nowrap">Payment Status</th>
+                            <th style="text-wrap: nowrap">Action</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <th scope="row">1</th>
-                            <td>
-                              <h6>Furniture</h6>
+                            <th scope="row" style="text-wrap: nowrap">
+                              #PR001
+                            </th>
+                            <td style="text-wrap: nowrap">Sofa</td>
+                            <td style="text-wrap: nowrap">
+                              <p class="text-truncate badge badge-soft-success">
+                                Item Received
+                              </p>
                             </td>
+                            <td style="text-wrap: nowrap">
+                              <p class="text-truncate badge badge-soft-primary">
+                                John Dyer
+                              </p>
+                            </td>
+                            <td style="text-wrap: nowrap">June 13, 2025</td>
+                            <td style="text-wrap: nowrap">
+                              <p class="text-truncate">Furniture Supplier</p>
+                            </td>
+                            <td style="text-wrap: nowrap">
+                              <p class="text-truncate text-success">AUD 2000</p>
+                            </td>
+                            <td style="text-wrap: nowrap">AUD 1000</td>
+                            <td style="text-wrap: nowrap">AUD 1000</td>
+                            <td style="text-wrap: nowrap">3 Month</td>
 
-                            <td>
-                              <span class="badge badge-soft-success"
-                                >Active</span
+                            <td style="text-wrap: nowrap">
+                              <span class="badge badge-soft-warning text-dark"
+                                >Pending</span
                               >
                             </td>
-                            <td>
+                            <td style="text-wrap: nowrap">
                               <div>
                                 <button
                                   class="btn btn-dark btn-sm"
                                   data-bs-toggle="modal"
-                                  data-bs-target=".editModal"
+                                  data-bs-target="#editModal"
                                 >
                                   <i class="ri-edit-box-line"></i>
                                 </button>
+
                                 <button
                                   class="btn btn-danger btn-sm waves-effect waves-light"
                                   id="sa-params"
@@ -529,25 +560,46 @@
                           </tr>
 
                           <tr>
-                            <th scope="row">2</th>
-                            <td>
-                              <h6>Decor</h6>
+                            <th scope="row" style="text-wrap: nowrap">
+                              #PR001
+                            </th>
+                            <td style="text-wrap: nowrap">Sofa</td>
+                            <td style="text-wrap: nowrap">
+                              <p class="text-truncate badge badge-soft-success">
+                                Item Received
+                              </p>
                             </td>
+                            <td style="text-wrap: nowrap">
+                              <p class="text-truncate badge badge-soft-primary">
+                                John Dyer
+                              </p>
+                            </td>
+                            <td style="text-wrap: nowrap">June 13, 2025</td>
+                            <td style="text-wrap: nowrap">
+                              <p class="text-truncate">Furniture Supplier</p>
+                            </td>
+                            <td style="text-wrap: nowrap">
+                              <p class="text-truncate text-success">AUD 2000</p>
+                            </td>
+                            <td style="text-wrap: nowrap">AUD 1000</td>
+                            <td style="text-wrap: nowrap">AUD 1000</td>
+                            <td style="text-wrap: nowrap">3 Month</td>
 
-                            <td>
-                              <span class="badge badge-soft-success"
-                                >Active</span
+                            <td style="text-wrap: nowrap">
+                              <span class="badge badge-soft-warning text-dark"
+                                >Pending</span
                               >
                             </td>
-                            <td>
+                            <td style="text-wrap: nowrap">
                               <div>
                                 <button
                                   class="btn btn-dark btn-sm"
                                   data-bs-toggle="modal"
-                                  data-bs-target=".editModal"
+                                  data-bs-target="#editModal"
                                 >
                                   <i class="ri-edit-box-line"></i>
                                 </button>
+
                                 <button
                                   class="btn btn-danger btn-sm waves-effect waves-light"
                                   id="sa-params"
@@ -559,25 +611,97 @@
                           </tr>
 
                           <tr>
-                            <th scope="row">3</th>
-                            <td>
-                              <h6>Lighting</h6>
+                            <th scope="row" style="text-wrap: nowrap">
+                              #PR001
+                            </th>
+                            <td style="text-wrap: nowrap">Sofa</td>
+                            <td style="text-wrap: nowrap">
+                              <p class="text-truncate badge badge-soft-success">
+                                Item Received
+                              </p>
                             </td>
+                            <td style="text-wrap: nowrap">
+                              <p class="text-truncate badge badge-soft-primary">
+                                John Dyer
+                              </p>
+                            </td>
+                            <td style="text-wrap: nowrap">June 13, 2025</td>
+                            <td style="text-wrap: nowrap">
+                              <p class="text-truncate">Furniture Supplier</p>
+                            </td>
+                            <td style="text-wrap: nowrap">
+                              <p class="text-truncate text-success">AUD 2000</p>
+                            </td>
+                            <td style="text-wrap: nowrap">AUD 1000</td>
+                            <td style="text-wrap: nowrap">AUD 1000</td>
+                            <td style="text-wrap: nowrap">3 Month</td>
 
-                            <td>
-                              <span class="badge badge-soft-success"
-                                >Active</span
+                            <td style="text-wrap: nowrap">
+                              <span class="badge badge-soft-warning text-dark"
+                                >Pending</span
                               >
                             </td>
-                            <td>
+                            <td style="text-wrap: nowrap">
                               <div>
                                 <button
                                   class="btn btn-dark btn-sm"
                                   data-bs-toggle="modal"
-                                  data-bs-target=".editModal"
+                                  data-bs-target="#editModal"
                                 >
                                   <i class="ri-edit-box-line"></i>
                                 </button>
+
+                                <button
+                                  class="btn btn-danger btn-sm waves-effect waves-light"
+                                  id="sa-params"
+                                >
+                                  <i class="ri-delete-bin-line"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row" style="text-wrap: nowrap">
+                              #PR001
+                            </th>
+                            <td style="text-wrap: nowrap">Sofa</td>
+                            <td style="text-wrap: nowrap">
+                              <p class="text-truncate badge badge-soft-success">
+                                Item Received
+                              </p>
+                            </td>
+                            <td style="text-wrap: nowrap">
+                              <p class="text-truncate badge badge-soft-primary">
+                                John Dyer
+                              </p>
+                            </td>
+                            <td style="text-wrap: nowrap">June 13, 2025</td>
+                            <td style="text-wrap: nowrap">
+                              <p class="text-truncate">Furniture Supplier</p>
+                            </td>
+                            <td style="text-wrap: nowrap">
+                              <p class="text-truncate text-success">AUD 2000</p>
+                            </td>
+                            <td style="text-wrap: nowrap">AUD 1000</td>
+                            <td style="text-wrap: nowrap">AUD 1000</td>
+                            <td style="text-wrap: nowrap">3 Month</td>
+
+                            <td style="text-wrap: nowrap">
+                              <span class="badge badge-soft-warning text-dark"
+                                >Pending</span
+                              >
+                            </td>
+                            <td style="text-wrap: nowrap">
+                              <div>
+                                <button
+                                  class="btn btn-dark btn-sm"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#editModal"
+                                >
+                                  <i class="ri-edit-box-line"></i>
+                                </button>
+
                                 <button
                                   class="btn btn-danger btn-sm waves-effect waves-light"
                                   id="sa-params"
@@ -639,6 +763,330 @@
         </div>
       </div>
 
+      <!--add Modal -->
+      <div
+        class="modal fade"
+        id="addModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add Purchase</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div>
+                <form>
+                  <!-- Form Fields -->
+                  <div class="row">
+                    <!-- Item Field -->
+                    <div class="mb-3 col-lg-6">
+                      <label class="form-label" for="item">Item</label>
+                      <input
+                        id="item"
+                        name="item"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+
+                    <!-- Order By Field -->
+                    <div class="mb-3 col-lg-6">
+                      <label class="form-label" for="orderBy">Order By</label>
+                      <input
+                        id="orderBy"
+                        name="orderBy"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+
+                    <!-- Date Field -->
+                    <div class="mb-3 col-lg-6">
+                      <label class="form-label" for="date">Date</label>
+                      <input
+                        id="date"
+                        name="date"
+                        type="date"
+                        class="form-control"
+                      />
+                    </div>
+
+                    <!-- Credit Field -->
+                    <div class="mb-3 col-lg-6">
+                      <label class="form-label" for="credit">Credit</label>
+                      <input
+                        id="credit"
+                        name="credit"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+
+                    <!-- Total Field -->
+                    <div class="mb-3 col-lg-6">
+                      <label class="form-label" for="total">Total</label>
+                      <input
+                        id="total"
+                        name="total"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+
+                    <!-- Paid Field -->
+                    <div class="mb-3 col-lg-6">
+                      <label class="form-label" for="paid">Paid</label>
+                      <input
+                        id="paid"
+                        name="paid"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+
+                    <!-- Balance Field -->
+                    <div class="mb-3 col-lg-6">
+                      <label class="form-label" for="balance">Balance</label>
+                      <input
+                        id="balance"
+                        name="balance"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+
+                    <!-- Supplier Field -->
+                    <div class="mb-3 col-lg-6">
+                      <label class="form-label" for="supplier">Supplier</label>
+                      <input
+                        id="supplier"
+                        name="supplier"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+
+                    <!-- Payment Status Field -->
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label" for="paymentStatus"
+                          >Payment Status</label
+                        >
+                        <select
+                          id="paymentStatus"
+                          name="paymentStatus"
+                          class="form-control select2"
+                        >
+                          <option value="">Select</option>
+                          <option value="pending">Pending</option>
+                          <option value="completed">Completed</option>
+                          <option value="waiting">Waiting</option>
+                          <option value="decline">Decline</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <!-- Purchase Status Field -->
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label" for="purchaseStatus"
+                          >Purchase Status</label
+                        >
+                        <select
+                          id="purchaseStatus"
+                          name="purchaseStatus"
+                          class="form-control select2"
+                        >
+                          <option value="">Select</option>
+                          <option value="received">Item Received</option>
+                          <option value="notReceived">Not Received</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--edit Modal -->
+      <div
+        class="modal fade"
+        id="editModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Edit Purchase</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div>
+                <form>
+                  <!-- Form Fields -->
+                  <div class="row">
+                    <!-- Item Field -->
+                    <div class="mb-3 col-lg-6">
+                      <label class="form-label" for="item">Item</label>
+                      <input
+                        id="item"
+                        name="item"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+
+                    <!-- Order By Field -->
+                    <div class="mb-3 col-lg-6">
+                      <label class="form-label" for="orderBy">Order By</label>
+                      <input
+                        id="orderBy"
+                        name="orderBy"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+
+                    <!-- Date Field -->
+                    <div class="mb-3 col-lg-6">
+                      <label class="form-label" for="date">Date</label>
+                      <input
+                        id="date"
+                        name="date"
+                        type="date"
+                        class="form-control"
+                      />
+                    </div>
+
+                    <!-- Credit Field -->
+                    <div class="mb-3 col-lg-6">
+                      <label class="form-label" for="credit">Credit</label>
+                      <input
+                        id="credit"
+                        name="credit"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+
+                    <!-- Total Field -->
+                    <div class="mb-3 col-lg-6">
+                      <label class="form-label" for="total">Total</label>
+                      <input
+                        id="total"
+                        name="total"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+
+                    <!-- Paid Field -->
+                    <div class="mb-3 col-lg-6">
+                      <label class="form-label" for="paid">Paid</label>
+                      <input
+                        id="paid"
+                        name="paid"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+
+                    <!-- Balance Field -->
+                    <div class="mb-3 col-lg-6">
+                      <label class="form-label" for="balance">Balance</label>
+                      <input
+                        id="balance"
+                        name="balance"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+
+                    <!-- Supplier Field -->
+                    <div class="mb-3 col-lg-6">
+                      <label class="form-label" for="supplier">Supplier</label>
+                      <input
+                        id="supplier"
+                        name="supplier"
+                        type="text"
+                        class="form-control"
+                      />
+                    </div>
+
+                    <!-- Payment Status Field -->
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label" for="paymentStatus"
+                          >Payment Status</label
+                        >
+                        <select
+                          id="paymentStatus"
+                          name="paymentStatus"
+                          class="form-control select2"
+                        >
+                          <option value="">Select</option>
+                          <option value="pending">Pending</option>
+                          <option value="completed">Completed</option>
+                          <option value="waiting">Waiting</option>
+                          <option value="decline">Decline</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <!-- Purchase Status Field -->
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label" for="purchaseStatus"
+                          >Purchase Status</label
+                        >
+                        <select
+                          id="purchaseStatus"
+                          name="purchaseStatus"
+                          class="form-control select2"
+                        >
+                          <option value="">Select</option>
+                          <option value="received">Item Received</option>
+                          <option value="notReceived">Not Received</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <footer class="footer">
         <div class="container-fluid">
           <div class="row">
@@ -664,7 +1112,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Add Categories</h5>
+            <h5 class="modal-title">Add Collection List</h5>
             <button
               type="button"
               class="btn-close"
@@ -677,8 +1125,25 @@
               <div class="row">
                 <div class="col-lg-12">
                   <div class="mb-3">
+                    <label class="form-label">Image</label>
+                    <input type="file" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="mb-3">
                     <label class="form-label">Title</label>
                     <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label">Select Category</label>
+                    <select name="" id="" class="form-control">
+                      <option value="">Men Collection</option>
+                      <option value="">Women Collection</option>
+                      <option value="">Belts Collection</option>
+                      <option value="">Sunglass Collection</option>
+                    </select>
                   </div>
                 </div>
 
@@ -733,7 +1198,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Edit Categories</h5>
+            <h5 class="modal-title">Edit Collection List</h5>
             <button
               type="button"
               class="btn-close"
@@ -746,8 +1211,25 @@
               <div class="row">
                 <div class="col-lg-12">
                   <div class="mb-3">
+                    <label class="form-label">Image</label>
+                    <input type="file" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="mb-3">
                     <label class="form-label">Title</label>
                     <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label">Select Category</label>
+                    <select name="" id="" class="form-control">
+                      <option value="">Men Collection</option>
+                      <option value="">Women Collection</option>
+                      <option value="">Belts Collection</option>
+                      <option value="">Sunglass Collection</option>
+                    </select>
                   </div>
                 </div>
 
@@ -758,12 +1240,12 @@
                     <div class="square-switch">
                       <input
                         type="checkbox"
-                        id="square-switch3"
+                        id="square-switch4"
                         switch="bool"
                         checked=""
                       />
                       <label
-                        for="square-switch3"
+                        for="square-switch4"
                         data-on-label="Ac..."
                         data-off-label="InA..."
                       ></label>
