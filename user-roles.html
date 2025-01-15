@@ -475,14 +475,14 @@
                 <div
                   class="page-title-box d-sm-flex align-items-center justify-content-between"
                 >
-                  <h4 class="mb-sm-0">Faq's</h4>
+                  <h4 class="mb-sm-0">User Roles</h4>
 
                   <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                       <li class="breadcrumb-item">
                         <a href="javascript: void(0);">Web Utlity</a>
                       </li>
-                      <li class="breadcrumb-item active">Faq's</li>
+                      <li class="breadcrumb-item active">User Roles</li>
                     </ol>
                   </div>
                 </div>
@@ -512,8 +512,11 @@
                         <thead>
                           <tr>
                             <th>#</th>
-                            <th>Question</th>
-                            <th>Answer</th>
+                            <th>Name</th>
+                            <th>Login ID</th>
+                            <th>Phone No.</th>
+                            <th>Access Type</th>
+                            <th>Password</th>
                             <th>Status</th>
                             <th>Action</th>
                           </tr>
@@ -522,15 +525,21 @@
                           <tr>
                             <th scope="row">1</th>
                             <td>
-                              <p class="text-truncate">
-                                Lorem ipsum dolor sit amet consectetur ....
-                              </p>
+                              <p class="text-truncate">Suraj Jamdade</p>
                             </td>
                             <td>
-                              <p class="text-truncate">
-                                Lorem ipsum dolor sit amet consectetur ....
-                              </p>
+                              <p class="text-truncate">#001</p>
                             </td>
+                            <td>
+                              <p class="text-truncate">+91 9090909090</p>
+                            </td>
+                            <td>
+                              <p class="text-truncate">Super Admin</p>
+                            </td>
+                            <td>
+                              <p class="text-truncate">12345678</p>
+                            </td>
+
                             <td>
                               <span class="badge badge-soft-success"
                                 >Active</span
@@ -556,6 +565,47 @@
                           </tr>
                         </tbody>
                       </table>
+                    </div>
+                    <div class="row mt-4">
+                      <div class="col-sm-6">
+                        <div>
+                          <p class="mb-sm-0 mt-2">
+                            Page <span class="fw-bold">2</span> Of
+                            <span class="fw-bold">113</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="float-sm-end">
+                          <ul class="pagination pagination-rounded mb-sm-0">
+                            <li class="page-item disabled">
+                              <a href="#" class="page-link"
+                                ><i class="mdi mdi-chevron-left"></i
+                              ></a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link">1</a>
+                            </li>
+                            <li class="page-item active">
+                              <a href="#" class="page-link">2</a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link">3</a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link">4</a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link">5</a>
+                            </li>
+                            <li class="page-item">
+                              <a href="#" class="page-link"
+                                ><i class="mdi mdi-chevron-end"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -590,7 +640,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Add Faq's</h5>
+            <h5 class="modal-title">Add Roles</h5>
             <button
               type="button"
               class="btn-close"
@@ -601,33 +651,84 @@
           <div class="modal-body">
             <form>
               <div class="row">
+                <!-- Full Name Field -->
                 <div class="col-lg-12">
                   <div class="mb-3">
-                    <label class="form-label">Question</label>
-                    <input type="text" class="form-control" />
+                    <label class="form-label" for="fullName">Full Name</label>
+                    <input
+                      type="text"
+                      id="fullName"
+                      name="fullName"
+                      class="form-control"
+                      placeholder="Enter your full name"
+                    />
                   </div>
                 </div>
-                <div class="col-lg-12">
-                  <div class="mb-3">
-                    <label class="form-label">Answer</label>
-                    <textarea name="" id="" class="form-control"></textarea>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="mb-3">
-                    <label class="form-label">Status</label>
 
+                <!-- Mobile Number Field -->
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label" for="mobileNumber"
+                      >Mobile Number</label
+                    >
+                    <input
+                      type="text"
+                      id="mobileNumber"
+                      name="mobileNumber"
+                      class="form-control"
+                      placeholder="Enter your mobile number"
+                    />
+                  </div>
+                </div>
+
+                <!-- Password Field -->
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label" for="password">Password</label>
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      class="form-control"
+                      placeholder="Enter a password"
+                    />
+                  </div>
+                </div>
+
+                <!-- Access Type Field -->
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label" for="accessType"
+                      >Access Type</label
+                    >
+                    <select
+                      id="accessType"
+                      name="accessType"
+                      class="form-control"
+                    >
+                      <option value="superAdmin">Super Admin</option>
+                      <option value="admin">Admin</option>
+                      <option value="productManager">Product Manager</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Status Field -->
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label" for="status">Status</label>
                     <div class="square-switch">
                       <input
                         type="checkbox"
-                        id="square-switch3"
+                        id="status"
+                        name="status"
                         switch="bool"
-                        checked=""
+                        checked
                       />
                       <label
-                        for="square-switch3"
-                        data-on-label="Ac..."
-                        data-off-label="InA..."
+                        for="status"
+                        data-on-label="Active"
+                        data-off-label="Inactive"
                       ></label>
                     </div>
                   </div>
@@ -664,7 +765,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Edit Faq's</h5>
+            <h5 class="modal-title">Edit Roles</h5>
             <button
               type="button"
               class="btn-close"
@@ -675,33 +776,84 @@
           <div class="modal-body">
             <form>
               <div class="row">
+                <!-- Full Name Field -->
                 <div class="col-lg-12">
                   <div class="mb-3">
-                    <label class="form-label">Question</label>
-                    <input type="text" class="form-control" />
+                    <label class="form-label" for="fullName">Full Name</label>
+                    <input
+                      type="text"
+                      id="fullName"
+                      name="fullName"
+                      class="form-control"
+                      placeholder="Enter your full name"
+                    />
                   </div>
                 </div>
-                <div class="col-lg-12">
-                  <div class="mb-3">
-                    <label class="form-label">Answer</label>
-                    <textarea name="" id="" class="form-control"></textarea>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="mb-3">
-                    <label class="form-label">Status</label>
 
+                <!-- Mobile Number Field -->
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label" for="mobileNumber"
+                      >Mobile Number</label
+                    >
+                    <input
+                      type="text"
+                      id="mobileNumber"
+                      name="mobileNumber"
+                      class="form-control"
+                      placeholder="Enter your mobile number"
+                    />
+                  </div>
+                </div>
+
+                <!-- Password Field -->
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label" for="password">Password</label>
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      class="form-control"
+                      placeholder="Enter a password"
+                    />
+                  </div>
+                </div>
+
+                <!-- Access Type Field -->
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label" for="accessType"
+                      >Access Type</label
+                    >
+                    <select
+                      id="accessType"
+                      name="accessType"
+                      class="form-control"
+                    >
+                      <option value="superAdmin">Super Admin</option>
+                      <option value="admin">Admin</option>
+                      <option value="productManager">Product Manager</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Status Field -->
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label class="form-label" for="status1">Status</label>
                     <div class="square-switch">
                       <input
                         type="checkbox"
-                        id="square-switch3"
-                        switch="bool"
-                        checked=""
+                        id="status1"
+                        name="status1"
+                        switch="bool1"
+                        checked
                       />
                       <label
-                        for="square-switch3"
-                        data-on-label="Ac..."
-                        data-off-label="InA..."
+                        for="status1"
+                        data-on-label="Active"
+                        data-off-label="Inactive"
                       ></label>
                     </div>
                   </div>
