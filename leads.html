@@ -382,7 +382,7 @@
                 <ul class="sub-menu" aria-expanded="false">
                   <li><a href="leads.html">Leads</a></li>
                   <li><a href="team.html">Team</a></li>
-                  <li><a href="customers.html">Customers</a></li>
+                  <li><a href="follow-up.html">Follow Up</a></li>
                   <li><a href="expanses.html">Expanses</a></li>
                 </ul>
               </li>
@@ -759,6 +759,17 @@
                   </div>
                 </div>
 
+                <!-- phone type -->
+                <div class="col-lg-4">
+                  <div class="mb-3">
+                    <label class="form-label" for="phoneType">phone Type</label>
+                    <select name="" id="" class="form-control">
+                      <option value="">Hot</option>
+                      <option value="">Cold</option>
+                    </select>
+                  </div>
+                </div>
+
                 <!-- Email Address -->
                 <div class="col-lg-4">
                   <div class="mb-3">
@@ -810,11 +821,7 @@
                     <label class="form-label" for="">Status*</label>
                     <select id="" name="" class="form-control" required>
                       <option value="new">New</option>
-                      <option value="converted">Converted</option>
-                      <option value="qualified">Qualified</option>
-                      <option value="proposal">Proposal Sent</option>
-                      <option value="contacted">Contacted</option>
-                      <option value="disqualified">Disqualified</option>
+                      <option value="existing">Existing</option>
                     </select>
                   </div>
                 </div>
@@ -1148,6 +1155,17 @@
                   </div>
                 </div>
 
+                <!-- phone type -->
+                <div class="col-lg-4">
+                  <div class="mb-3">
+                    <label class="form-label" for="phoneType">phone Type</label>
+                    <select name="" id="" class="form-control">
+                      <option value="">Hot</option>
+                      <option value="">Cold</option>
+                    </select>
+                  </div>
+                </div>
+
                 <!-- Email Address -->
                 <div class="col-lg-4">
                   <div class="mb-3">
@@ -1199,11 +1217,7 @@
                     <label class="form-label" for="">Status*</label>
                     <select id="" name="" class="form-control" required>
                       <option value="new">New</option>
-                      <option value="converted">Converted</option>
-                      <option value="qualified">Qualified</option>
-                      <option value="proposal">Proposal Sent</option>
-                      <option value="contacted">Contacted</option>
-                      <option value="disqualified">Disqualified</option>
+                      <option value="existing">Existing</option>
                     </select>
                   </div>
                 </div>
@@ -1578,15 +1592,208 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="">Assigned</label>
-                <select name="" id="" class="form-control">
-                  <option value="">Suraj Jamdade</option>
-                  <option value="">Vishal Mishra</option>
-                </select>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#home"
+                  type="button"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="true"
+                >
+                  Lead
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                >
+                  More Info
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                >
+                  Address
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="note-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#note"
+                  type="button"
+                  role="tab"
+                  aria-controls="note"
+                  aria-selected="false"
+                >
+                  Note
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="home"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+              >
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Lead Title*</th>
+                      <td>--</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">First Name</th>
+                      <td>Jacob</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Last Name*</th>
+                      <td>--</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Telephone*</th>
+                      <td>--</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Phone Type*</th>
+                      <td>
+                        <span class="badge badge-soft-danger">Hot</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Email Address*</th>
+                      <td>--</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Lead Value (AUD)*</th>
+                      <td>--</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Assigned</th>
+                      <td>
+                        <span class="badge badge-soft-primary">--</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Status</th>
+                      <td>
+                        <span class="badge badge-soft-secondary">--</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Source</th>
+                      <td>
+                        <span class="badge badge-soft-danger">--</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Last Contacted*</th>
+                      <td>
+                        <span class="badge badge-soft-danger">--</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-            </form>
+              <div
+                class="tab-pane fade"
+                id="profile"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+              >
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Total Budget*</th>
+                      <td>--</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Target Date *</th>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Brand Name*</th>
+                      <td>--</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="contact"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+              >
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Company Name*</th>
+                      <td>--</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Street*</th>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">City*</th>
+                      <td>--</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">State*</th>
+                      <td>--</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Zip Code*</th>
+                      <td>--</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Website*</th>
+                      <td>--</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Country*</th>
+                      <td>--</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="note"
+                role="tabpanel"
+                aria-labelledby="note-tab"
+              >
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Note*</th>
+                      <td>--</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
           <div class="modal-footer">
             <button
