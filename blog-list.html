@@ -506,18 +506,31 @@
               <div class="col-lg-12">
                 <div class="card">
                   <div class="card-body">
-                    <div class="row mb-4 text-lg-end">
-                      <div class="col-12">
-                        <a href="create-blog.html">
+                    <div class="row mb-4">
+                      <div class="col-lg-4">
+                        <div class="input-group">
+                          <input
+                            type="search"
+                            class="form-control"
+                            placeholder="Search..."
+                          />
                           <button
+                            class="btn btn-dark"
                             type="button"
-                            class="btn btn-dark waves-effect waves-light btn-sm"
+                            id="button-addon2"
                           >
-                            Add More
-                            <i
-                              class="ri-arrow-right-line align-middle ms-2"
-                            ></i></button
-                        ></a>
+                            <i class="ri-search-line"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="col-12 text-lg-end">
+                        <a
+                          href="create-blog.html"
+                          class="btn btn-dark waves-effect waves-light btn-sm"
+                        >
+                          Add More
+                          <i class="ri-arrow-right-line align-middle ms-2"></i>
+                        </a>
                       </div>
                     </div>
                     <div class="table-responsive">
@@ -788,178 +801,6 @@
           </div>
         </div>
       </footer>
-    </div>
-
-    <!--add  modal start -->
-    <div
-      class="modal fade addModal"
-      tabindex="-1"
-      aria-labelledby="mySmallModalLabel"
-      aria-hidden="true"
-      style="display: none"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Add Collection List</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="mb-3">
-                    <label class="form-label">Image</label>
-                    <input type="file" class="form-control" />
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="mb-3">
-                    <label class="form-label">Title</label>
-                    <input type="text" class="form-control" />
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="mb-3">
-                    <label class="form-label">Select Category</label>
-                    <select name="" id="" class="form-control">
-                      <option value="">Men Collection</option>
-                      <option value="">Women Collection</option>
-                      <option value="">Belts Collection</option>
-                      <option value="">Sunglass Collection</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="mb-3">
-                    <label class="form-label">Status</label>
-
-                    <div class="square-switch">
-                      <input
-                        type="checkbox"
-                        id="square-switch3"
-                        switch="bool"
-                        checked=""
-                      />
-                      <label
-                        for="square-switch3"
-                        data-on-label="Ac..."
-                        data-off-label="InA..."
-                      ></label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              class="btn btn-light btn-sm"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
-              Cancel <i class="ri-close-circle-line"></i>
-            </button>
-            <button class="btn btn-success btn-sm">
-              Save <i class="ri-save-2-line"></i>
-            </button>
-          </div>
-        </div>
-        <!-- /.modal-content -->
-      </div>
-      <!-- /.modal-dialog -->
-    </div>
-
-    <!--edit  modal start -->
-    <div
-      class="modal fade editModal"
-      tabindex="-1"
-      aria-labelledby="mySmallModalLabel"
-      aria-hidden="true"
-      style="display: none"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Edit Collection List</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="mb-3">
-                    <label class="form-label">Image</label>
-                    <input type="file" class="form-control" />
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="mb-3">
-                    <label class="form-label">Title</label>
-                    <input type="text" class="form-control" />
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="mb-3">
-                    <label class="form-label">Select Category</label>
-                    <select name="" id="" class="form-control">
-                      <option value="">Men Collection</option>
-                      <option value="">Women Collection</option>
-                      <option value="">Belts Collection</option>
-                      <option value="">Sunglass Collection</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="mb-3">
-                    <label class="form-label">Status</label>
-
-                    <div class="square-switch">
-                      <input
-                        type="checkbox"
-                        id="square-switch4"
-                        switch="bool"
-                        checked=""
-                      />
-                      <label
-                        for="square-switch4"
-                        data-on-label="Ac..."
-                        data-off-label="InA..."
-                      ></label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              class="btn btn-light btn-sm"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
-              Cancel <i class="ri-close-circle-line"></i>
-            </button>
-            <button class="btn btn-success btn-sm">
-              Update <i class="ri-save-2-line"></i>
-            </button>
-          </div>
-        </div>
-        <!-- /.modal-content -->
-      </div>
-      <!-- /.modal-dialog -->
     </div>
 
     <!-- JAVASCRIPT -->
